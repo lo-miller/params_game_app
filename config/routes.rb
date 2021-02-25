@@ -6,4 +6,14 @@ Rails.application.routes.draw do
   # namespace :api do
   #   get "/photos" => "photos#index"
   # end
+  namespace :api do
+    get "/caps" => "params#capitalize"
+  end
+
+  namespace :api do
+    get "/caps/:name" => "params#capitalize"
+  end
+
+
+
 end
